@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e7ff; /* Fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #2c3e50;
+    background-image: url(3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+
+#container:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
+
+h1 {
+    color: #34495e;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+#settings {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    color: #607d8b;
+}
+
+#timer {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-top: 15px;
+}
+
+#word-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 35px;
+    gap: 20px;
+}
+
+#left-word, #right-word {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    transition: transform 0.2s;
+}
+
+#left-word:hover, #right-word:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
+    background-color: #eaf0f9;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #timer {
+        font-size: 1.3em;
+    }
+
+    #word-container {
+        font-size: 1.5em;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    #container {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #word-container {
+        font-size: 1.3em;
+    }
+}
